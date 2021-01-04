@@ -1,10 +1,30 @@
-// get input
+var userInput = document.querySelector('input');
+var getAnswerButton = document.getElementById('get-answer');
+var clearButton = document.querySelector('.clear');
 
-// get random response
+getAnswerButton.addEventListener('click', function(e) {
+  e.preventDefault();
 
-// inject that into response and hide the ball
-// should have question in italics and answer in slightly larger font (maybe bold?)
-// should also remove property of disabled from button
+  let response = data[Math.floor(Math.random() * data.length)];
 
+  document.querySelector('.ball').classList.toggle('hidden');
+  document.querySelector('.give-answer').classList.toggle('hidden');
+  document.querySelector('.clear').disabled = false;
+
+  document.querySelector('.give-answer').innerHTML = `
+    <div class="question"><em>${userInput.value}?</em></div>
+    <div class="answer"><strong>${response}</strong></div>
+  `
+
+  userInput.value = "";
+});
+
+clearButton.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  document.querySelector('.ball').classList.toggle('hidden');
+  document.querySelector('.give-answer').classList.toggle('hidden');
+  document.querySelector('.clear').disabled = false;
+})
 
 

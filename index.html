@@ -13,13 +13,13 @@
       <div class="roll">
         <div class="ask">
           <input type="text" placeholder="Ask your question here!">
-          <button class="get-answer" type="submit">Get your answer</button>
+          <button id="get-answer" class="get-answer" type="submit">Get your answer</button>
         </div>
 
         <div class="response">
           <img class="ball" src="assets/eight-ball.png">
-          <!--          8-ball OR question and response go here-->
-        </div>
+          <div class="give-answer hidden"></div>
+         </div>
         <div class="clear-btn">
           <button class="clear" disabled>Clear</button>
         </div>
@@ -30,5 +30,8 @@
     </div>
 
   </section>
+
+  <script src="data.js"></script>
+  <script src="index.js"></script>
   </body>
 </html>

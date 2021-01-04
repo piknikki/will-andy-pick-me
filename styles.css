@@ -86,11 +86,19 @@ input {
 
 .ball {
     width: 70px;
-    padding: 40px;
+    padding: 25px;
 }
 
 .roll,
 .woody {
     height: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.give-answer {
+    padding: 40px 10px;
 }
 
