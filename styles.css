@@ -30,7 +30,8 @@ body {
     font-size: 2rem;
 }
 
-input {
+input,
+input:focus {
     line-height: 2;
     width: 80%;
     padding: 5px 20px;
@@ -39,7 +40,12 @@ input {
     margin: 5px;
 }
 
-.get-answer {
+input:focus::placeholder {
+    color: transparent;
+}
+
+.get-answer,
+.get-answer:focus {
     line-height: 2;
     width: 90%;
     padding: 5px 20px;
@@ -101,4 +107,3 @@ input {
 .give-answer {
     padding: 40px 10px;
 }
-

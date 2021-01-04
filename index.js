@@ -13,7 +13,7 @@ getAnswerButton.addEventListener('click', function(e) {
 
   document.querySelector('.give-answer').innerHTML = `
     <div class="question"><em>${userInput.value}?</em></div>
-    <div class="answer"><strong>${response}</strong></div>
+    <div class="answer" style="font-size:1.2rem;font-weight:bold;"><strong>${response}</strong></div>
   `
 
   userInput.value = "";
@@ -24,7 +24,7 @@ clearButton.addEventListener('click', function(e) {
 
   document.querySelector('.ball').classList.toggle('hidden');
   document.querySelector('.give-answer').classList.toggle('hidden');
-  document.querySelector('.clear').disabled = false;
+  document.querySelector('.clear').disabled = true;
 })
 
 
