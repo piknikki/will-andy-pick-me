@@ -11,13 +11,86 @@ clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
 
-.wrapper {
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    width: 80%;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
     height: 400px;
+}
+
+.title {
+    font-family: 'Life Savers', serif;
+    color: #2B4E80;
+    font-size: 2rem;
+}
+
+input {
+    line-height: 2;
+    width: 80%;
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    margin: 5px;
+}
+
+.get-answer {
+    line-height: 2;
+    width: 90%;
+    padding: 5px 20px;
+    background: #2B4E80;
+    color: white;
+    border: none;
+    text-align: center;
+    margin: 5px;
 }
 
 .container {
     display: flex;
-
+    flex-flow: row nowrap;
+    justify-content: center;
 }
+
+.roll {
+    padding: 10px;
+    background: #E6ECF4;;
+    flex-direction: column;
+}
+
+.clear-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.clear {
+    justify-self: flex-end;
+    padding: 5px 10px;
+    border: none;
+    background: #DE4841;
+    color: white;
+}
+
+.clear:disabled {
+    background: #D0CDCD;
+}
+
+.roll,
+.img-woody {
+    width: 50%;
+}
+
+.ball {
+    width: 70px;
+    padding: 40px;
+}
+
+.roll,
+.woody {
+    height: 50%;
+}
+
